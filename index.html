@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Olivia Rodrigo · Portafolio</title>
   <link rel="stylesheet" href="estilos.css">
+  <script src="app.js" defer></script>
+
 </head>
 <body>
 
@@ -20,10 +22,11 @@
       </ul>
     </nav>
 
-    <img class="foto" src="olivia1.jpg" alt="Retrato de Olivia Rodrigo">
+    <img class="foto" src="img/olivia1.jpg" alt="Retrato de Olivia Rodrigo">
     <h1>Olivia Rodrigo</h1>
+    <p class="saludo" id="saludo">Hola</p>
     <p>Cantautora y actriz</p>
-    <a class="boton" href="#proyectos">Ver proyectos</a>
+    <button class="boton-tema" id="boton-tema">Modo oscuro</button>
   </header>
 
   <main>
@@ -31,62 +34,25 @@
     <section class="tarjeta" id="sobre-mi">
       <h2>Sobre mí</h2>
       <p>Soy Olivia Rodrigo, cantautora y actriz estadounidense nacida en 2003 en Murrieta, California. Empecé en la actuación con series de Disney y llegué a la música con "drivers license", en 2021. Escribo canciones sobre el desamor, la ansiedad y el crecimiento, con una mezcla de pop, rock y baladas al piano.</p>
+      <p class="extra oculto" id="texto-extra">Mis canciones nacen primero al piano o con la guitarra, y después las termino en el estudio junto al productor Dan Nigro. Me gusta escribir con honestidad, aunque eso signifique hablar de lo que más cuesta decir.</p>
+      <button class="boton" id="leer-mas">Leer más</button>
     </section>
 
     <section class="tarjeta" id="habilidades">
       <h2>Habilidades</h2>
-      <ul class="lista-habilidades">
-        <li>Composición de canciones</li>
-        <li>Canto</li>
-        <li>Piano y guitarra</li>
-        <li>Actuación</li>
-        <li>Presencia en escenario</li>
-        <li>Trabajo en estudio</li>
-      </ul>
+      <ul class="lista-habilidades" id="lista-habilidades"></ul>
     </section>
 
     <section class="tarjeta" id="servicios">
       <h2>Servicios: lo que hago</h2>
-      <div class="fila">
-        <article class="mini-tarjeta">
-          <h3>Composición</h3>
-          <p>Escribo mis propias canciones, junto al productor Dan Nigro.</p>
-        </article>
-        <article class="mini-tarjeta">
-          <h3>Conciertos</h3>
-          <p>Giras mundiales con shows en arenas y festivales.</p>
-        </article>
-        <article class="mini-tarjeta">
-          <h3>Actuación</h3>
-          <p>Papeles en series de televisión y plataformas de streaming.</p>
-        </article>
-        <article class="mini-tarjeta">
-          <h3>Colaboraciones</h3>
-          <p>Canciones y presentaciones con otros artistas, como Weezer y Robert Smith.</p>
-        </article>
-      </div>
+      <p class="total" id="total-servicios"></p>
+      <div class="fila" id="servicios-lista"></div>
     </section>
 
     <section class="tarjeta" id="proyectos">
       <h2>Proyectos: mis álbumes</h2>
-      <div class="galeria">
-        <article class="proyecto">
-          <span class="etiqueta">Nuevo</span>
-          <img src="YSPSFAGSIL.jpg" alt="Portada del álbum You Seem Pretty Sad for a Girl So in Love">
-          <h3>You Seem Pretty Sad for a Girl So in Love</h3>
-          <p>Tercer álbum de estudio, publicado en junio de 2026 con 13 canciones.</p>
-        </article>
-        <article class="proyecto">
-          <img src="guts.jpg" alt="Portada del álbum GUTS">
-          <h3>GUTS</h3>
-          <p>Segundo álbum, de 2023, con un sonido más cercano al pop punk.</p>
-        </article>
-        <article class="proyecto">
-          <img src="sour.jpg" alt="Portada del álbum SOUR">
-          <h3>SOUR</h3>
-          <p>Álbum debut, de 2021, que incluye "drivers license".</p>
-        </article>
-      </div>
+      <p class="total" id="total-proyectos"></p>
+      <div class="galeria" id="galeria"></div>
     </section>
 
     <section class="tarjeta" id="formacion">
@@ -111,7 +77,7 @@
   </main>
 
   <footer>
-    <p>Página de fans hecha con amor Olivia Rodrigo y sus obras pertenecen a sus titulares.</p>
+    <p>&copy; <span id="anio">2026</span> Página echa por fans con mucho amor.</p>
   </footer>
 
   <a href="#" class="volver-arriba" aria-label="Volver arriba">↑</a>
