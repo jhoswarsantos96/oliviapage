@@ -45,20 +45,20 @@ const proyectos = [
     titulo: "You Seem Pretty Sad for a Girl So in Love",
     descripcion:
       "Tercer álbum de estudio, publicado en junio de 2026 con 13 canciones.",
-    imagen: "YSPSFAGSIL.jpg",
+    imagen: src="YSPSFAGSIL.jpg",
     nuevo: true,
   },
   {
     titulo: "GUTS",
     descripcion:
       "Segundo álbum, de 2023, con un sonido más cercano al pop punk.",
-    imagen: "guts.jpg",
+    imagen: src="guts.jpg",
     nuevo: false,
   },
   {
     titulo: "SOUR",
     descripcion: 'Álbum debut, de 2021, que incluye "drivers license".',
-    imagen: "sour.jpg",
+    imagen: src="sour.jpg",
     nuevo: false,
   },
 ];
