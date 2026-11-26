@@ -1,86 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Olivia Rodrigo · Portafolio</title>
-  <link rel="stylesheet" href="estilos.css">
-  <script src="app.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olivia Rodrigo · Portafolio</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="cabecera" id="inicio">
+      <nav class="menu">
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#formacion">Formación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
 
-</head>
-<body>
+      <img class="foto" src="img/olivia1.jpg" alt="Retrato de Olivia Rodrigo" />
+      <h1>Olivia Rodrigo</h1>
+      <p class="saludo" id="saludo">Hola</p>
+      <p>Cantautora y actriz</p>
+      <button class="boton-tema" id="boton-tema">Modo oscuro</button>
+    </header>
 
-  <header class="cabecera" id="inicio">
-    <nav class="menu">
-      <ul>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#formacion">Formación</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <main>
+      <section class="tarjeta" id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy Olivia Rodrigo, cantautora y actriz estadounidense nacida en 2003
+          en Murrieta, California. Empecé en la actuación con series de Disney y
+          llegué a la música con "drivers license", en 2021. Escribo canciones
+          sobre el desamor, la ansiedad y el crecimiento, con una mezcla de pop,
+          rock y baladas al piano.
+        </p>
+        <p class="extra oculto" id="texto-extra">
+          Mis canciones nacen primero al piano o con la guitarra, y después las
+          termino en el estudio junto al productor Dan Nigro. Me gusta escribir
+          con honestidad, aunque eso signifique hablar de lo que más cuesta
+          decir.
+        </p>
+        <button class="boton" id="leer-mas">Leer más</button>
+      </section>
 
-    <img class="foto" src="img/olivia1.jpg" alt="Retrato de Olivia Rodrigo">
-    <h1>Olivia Rodrigo</h1>
-    <p class="saludo" id="saludo">Hola</p>
-    <p>Cantautora y actriz</p>
-    <button class="boton-tema" id="boton-tema">Modo oscuro</button>
-  </header>
+      <section class="tarjeta" id="habilidades">
+        <h2>Habilidades</h2>
+        <ul class="lista-habilidades" id="lista-habilidades"></ul>
+      </section>
 
-  <main>
+      <section class="tarjeta" id="servicios">
+        <h2>Servicios: lo que hago</h2>
+        <p class="total" id="total-servicios"></p>
+        <div class="fila" id="servicios-lista"></div>
+      </section>
 
-    <section class="tarjeta" id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Soy Olivia Rodrigo, cantautora y actriz estadounidense nacida en 2003 en Murrieta, California. Empecé en la actuación con series de Disney y llegué a la música con "drivers license", en 2021. Escribo canciones sobre el desamor, la ansiedad y el crecimiento, con una mezcla de pop, rock y baladas al piano.</p>
-      <p class="extra oculto" id="texto-extra">Mis canciones nacen primero al piano o con la guitarra, y después las termino en el estudio junto al productor Dan Nigro. Me gusta escribir con honestidad, aunque eso signifique hablar de lo que más cuesta decir.</p>
-      <button class="boton" id="leer-mas">Leer más</button>
-    </section>
+      <section class="tarjeta" id="proyectos">
+        <h2>Proyectos: mis álbumes</h2>
+        <p class="total" id="total-proyectos"></p>
+        <div class="galeria" id="galeria"></div>
+      </section>
 
-    <section class="tarjeta" id="habilidades">
-      <h2>Habilidades</h2>
-      <ul class="lista-habilidades" id="lista-habilidades"></ul>
-    </section>
+      <section class="tarjeta" id="formacion">
+        <h2>Formación y trayectoria</h2>
+        <ul class="trayectoria">
+          <li>
+            <strong>2016:</strong> primeros papeles de actuación en Disney
+            Channel.
+          </li>
+          <li>
+            <strong>2019:</strong> protagonista de la serie High School Musical:
+            The Musical: The Series.
+          </li>
+          <li>
+            <strong>2021:</strong> lanza "drivers license" y el álbum SOUR.
+          </li>
+          <li>
+            <strong>2022:</strong> gana tres premios Grammy, entre ellos Mejor
+            Artista Nuevo.
+          </li>
+          <li><strong>2023:</strong> lanza el álbum GUTS.</li>
+          <li>
+            <strong>2026:</strong> lanza su tercer álbum y la gira The Unraveled
+            Tour.
+          </li>
+        </ul>
+      </section>
 
-    <section class="tarjeta" id="servicios">
-      <h2>Servicios: lo que hago</h2>
-      <p class="total" id="total-servicios"></p>
-      <div class="fila" id="servicios-lista"></div>
-    </section>
+      <section class="tarjeta" id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          ¿Quieres escribirme? Usa el formulario o mándame un correo directo.
+        </p>
+        <p>
+          Correo:
+          <a href="https://store.oliviarodrigo.com/"
+            >oliviarodrigo@livedumb.com</a
+          >
+        </p>
 
-    <section class="tarjeta" id="proyectos">
-      <h2>Proyectos: mis álbumes</h2>
-      <p class="total" id="total-proyectos"></p>
-      <div class="galeria" id="galeria"></div>
-    </section>
+        <form class="formulario" id="formulario" novalidate>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <p class="error" id="error-nombre"></p>
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" required />
+          <p class="error" id="error-correo"></p>
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            maxlength="300"
+          ></textarea>
+          <p class="contador" id="contador">0 / 300</p>
+          <p class="error" id="error-mensaje"></p>
+          <button type="submit" class="boton">Enviar</button>
+          <p class="exito" id="mensaje-exito"></p>
+        </form>
+      </section>
+    </main>
 
-    <section class="tarjeta" id="formacion">
-      <h2>Formación y trayectoria</h2>
-      <ul class="trayectoria">
-        <li><strong>2016:</strong> primeros papeles de actuación en Disney Channel.</li>
-        <li><strong>2019:</strong> protagonista de la serie High School Musical: The Musical: The Series.</li>
-        <li><strong>2021:</strong> lanza "drivers license" y el álbum SOUR.</li>
-        <li><strong>2022:</strong> gana tres premios Grammy, entre ellos Mejor Artista Nuevo.</li>
-        <li><strong>2023:</strong> lanza el álbum GUTS.</li>
-        <li><strong>2026:</strong> lanza su tercer álbum y la gira The Unraveled Tour.</li>
-      </ul>
-    </section>
+    <footer>
+      <p>
+        &copy; <span id="anio">2026</span> Página hecha por fans con mucho amor.
+      </p>
+    </footer>
 
-    <section class="tarjeta" id="contacto">
-      <h2>Contacto</h2>
-      <p>¿Quieres escribirme? Reemplaza este correo de ejemplo por el tuyo.</p>
-      <p>Correo: <a href="https://store.oliviarodrigo.com/">oliviarodrigo@livedumb.com</a></p>
-      <a class="boton" href="mailto:oliviarodrigo@livedumb.com">Escríbeme</a>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; <span id="anio">2026</span> Página echa por fans con mucho amor.</p>
-  </footer>
-
-  <a href="#" class="volver-arriba" aria-label="Volver arriba">↑</a>
-
-</body>
+    <a href="#" class="volver-arriba" aria-label="Volver arriba">↑</a>
+  </body>
 </html>

@@ -6,6 +6,7 @@
   --primario: #3b2260;
   --acento: #d6307f;
   --claro: #ffb3d9;
+  --texto-claro: #f6f1fa; /* texto sobre fondos oscuros: no cambia en modo oscuro */
 }
 
 /* 2. Base */
@@ -37,7 +38,7 @@ img {
 .cabecera {
   padding: 2.5rem 1rem 3rem;
   text-align: center;
-  color: var(--fondo);
+  color: var(--texto-claro);
   background-color: var(--primario);
 }
 
@@ -121,7 +122,7 @@ footer {
   padding: 1.5rem 1rem 5rem;
   text-align: center;
   font-size: 0.9rem;
-  color: var(--fondo);
+  color: var(--texto-claro);
   background-color: var(--primario);
 }
 
@@ -141,7 +142,7 @@ footer p {
 }
 
 .menu a {
-  color: var(--fondo);
+  color: var(--texto-claro);
   text-decoration: none;
   font-weight: 600;
 }
@@ -264,7 +265,8 @@ footer p {
 @media (min-width: 600px) {
   .galeria {
     grid-template-columns: repeat(2, 1fr);
-  }}
+  }
+}
 
 @media (min-width: 900px) {
   .galeria {
@@ -325,7 +327,9 @@ body.oscuro {
   --primario: #4e036b;
 }
 
-body.oscuro .tarjeta { background-color: #430a72; }
+body.oscuro .tarjeta {
+  background-color: #430a72;
+}
 
 /* 19. Leer más */
 .oculto {
@@ -343,4 +347,63 @@ button.boton {
 .total {
   font-weight: 600;
   color: var(--acento);
+}
+
+/* 21. Formulario de contacto */
+.formulario {
+  display: grid;
+  gap: 0.25rem;
+  margin: 1.5rem 0 0;
+}
+
+.formulario label {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+  color: #25202d;
+  background-color: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+
+.formulario textarea {
+  resize: vertical;
+}
+
+.formulario input:focus-visible,
+.formulario textarea:focus-visible {
+  outline: 2px solid var(--acento);
+  outline-offset: 1px;
+}
+
+.formulario .boton {
+  justify-self: start;
+  margin-top: 0.75rem;
+}
+
+.error {
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+  color: #b91c1c;
+}
+.contador {
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+  text-align: right;
+}
+.exito {
+  font-weight: 600;
+  color: #15803d;
+}
+body.oscuro .error {
+  color: #fca5a5;
+}
+body.oscuro .exito {
+  color: #86efac;
 }
